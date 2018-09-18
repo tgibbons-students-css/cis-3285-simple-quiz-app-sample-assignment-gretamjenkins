@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleQuizApplication
 {
-    abstract public class Question
+    abstract class Question
     {
         protected String questionText;
 
@@ -15,7 +15,7 @@ namespace SimpleQuizApplication
             this.questionText = questionText;
         }
 
-        public String getQuestion() { return this.questionText; }
+        public virtual String getQuestion() { return this.questionText; }
 
         public abstract String getAnswer();
         public abstract bool checkAnswer(String answer);

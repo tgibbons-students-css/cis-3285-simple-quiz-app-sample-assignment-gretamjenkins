@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleQuizApplication
 {
-    public class ShortAnswerQuestion : Question
+    class ShortAnswerQuestion : Question
     {
         private String answer;
 
@@ -39,16 +39,5 @@ namespace SimpleQuizApplication
             return (answer.Equals(givenAnswer, StringComparison.InvariantCultureIgnoreCase));
         }
 
-        /// <summary>
-        /// The function removes all whitespace from a string. So it removes all spaces at the start, middle and end of a string
-        ///  ***** Currently this method is never called so a unit test should fail *****
-        /// </summary>
-        /// <param name="fullString">The given string where whitespaces will be removed</param>
-        /// <returns>The given string with all white space removed</returns>
-        private String RemoveWhitespace(String fullString)
-        { 
-            String resultString = String.Concat(fullString.Where(c => !char.IsWhiteSpace(c)));
-            return resultString;
-        }
     }
 }
