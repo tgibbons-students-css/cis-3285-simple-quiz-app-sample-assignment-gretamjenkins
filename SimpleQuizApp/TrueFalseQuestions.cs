@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleQuizApplication
 {
-    class TrueFalseQuestion : Question
+    public class TrueFalseQuestion : Question
     {
         private bool answer;
 

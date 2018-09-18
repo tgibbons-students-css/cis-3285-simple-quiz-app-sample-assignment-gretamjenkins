@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleQuizApplication
 {
-    class ShortAnswerQuestion : Question
+    public class ShortAnswerQuestion : Question
     {
         private String answer;
 

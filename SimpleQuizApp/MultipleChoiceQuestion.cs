@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleQuizApplication
 {
-    class MultipleChoiceQuestion : Question
+    public class MultipleChoiceQuestion : Question
     {
         string[] possibleAnswers;
         int answerIndex;
